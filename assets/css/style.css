@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto Mono Bold";
+  src: url("../fonts/Roboto_Mono/static/RobotoMono-Bold.ttf");
+}
+@font-face {
+  font-family: "Merienda";
+  src: url("../fonts/Merienda/Merienda-Regular.ttf");
+}
+@font-face {
+  font-family: "Merienda Bold";
+  src: url("../fonts/Merienda/Merienda-Bold.ttf");
+}
+.nav {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: rgb(220, 53, 69);
+}
+.nav-mobile{
+  visibility: hidden;
+}
+#navs{
+  background-color: #CC092F;
+}
+@media screen and (max-width: 576px) {
+  .nav{
+    display: none!important;
+  }
+  .nav-mobile{
+    height: 50px;
+    visibility: visible;
+    background-color: rgb(220, 53, 69);
+    
+  }
+  .menu-mobile{
+    margin-top: 51px;
+    opacity: 65%;
+  }
+  .texto{
+    margin-bottom: 20px;
+    font-size: 15px!important;
+  }
+}
+
+.img-fundo {
+  background-image: url("../img/FUNDO-SITE.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95vh;
+}
+.caixa-titulo {
+  transition: all 2s;
+  background-color:white;
+  padding: 15px;
+  border-radius: 30px;
+}
+.titulo {
+  color: #CC092F;
+  font-family: "Roboto Mono Bold";
+  font-size: 75px;
+}
+.nav-link {
+  transition: all 0.5s;
+  font-family: "Roboto Mono";
+  color: white;
+}
+.nav-link:hover {
+  transition: all 0.5s;
+  background-color: white;
+  color: rgb(220, 53, 69);
+  border-radius: 20px;
+}
+.nav-link:focus{
+   transition: all 0.5s;
+  background-color: white;
+  color: rgb(220, 53, 69);
+  border-radius: 20px;
+ 
+}
+.subtitulo {
+  font-family: "Merienda Bold";
+  font-size: 37.5px;
+}
+.texto {
+  font-family: "Roboto Mono";
+  font-size: 18px;
+  text-align: justify;
+}
