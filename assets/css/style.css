@@ -19,29 +19,37 @@
   border-bottom-right-radius: 30px;
   background-color: rgb(220, 53, 69);
 }
-.nav-mobile{
+.nav-mobile {
   visibility: hidden;
 }
-#navs{
-  background-color: #CC092F;
+#navs {
+  background-color: #cc092f;
 }
 @media screen and (max-width: 576px) {
-  .nav{
-    display: none!important;
+  .nav {
+    display: none !important;
   }
-  .nav-mobile{
+  .nav-mobile {
     height: 50px;
     visibility: visible;
     background-color: rgb(220, 53, 69);
-    
   }
-  .menu-mobile{
-    margin-top: 51px;
-    opacity: 65%;
+  .menu-mobile {
+   width: 300px;
+   /* display: flex;
+   flex-direction: row-reverse; */
   }
-  .texto{
+  .nav-item-mobile {
+    background-color: #cc092f;
+    color: white !important;
+  }
+  .nav-item-mobile:hover {
+    background-color: white;
+    color: #cc092f !important;
+  }
+  .texto {
     margin-bottom: 20px;
-    font-size: 15px!important;
+    font-size: 15px !important;
   }
 }
 
@@ -53,12 +61,12 @@
 }
 .caixa-titulo {
   transition: all 2s;
-  background-color:white;
+  background-color: white;
   padding: 15px;
   border-radius: 30px;
 }
 .titulo {
-  color: #CC092F;
+  color: #cc092f;
   font-family: "Roboto Mono Bold";
   font-size: 75px;
 }
@@ -73,12 +81,11 @@
   color: rgb(220, 53, 69);
   border-radius: 20px;
 }
-.nav-link:focus{
-   transition: all 0.5s;
+.nav-link:focus {
+  transition: all 0.5s;
   background-color: white;
   color: rgb(220, 53, 69);
   border-radius: 20px;
- 
 }
 .subtitulo {
   font-family: "Merienda Bold";
@@ -89,3 +96,12 @@
   font-size: 18px;
   text-align: justify;
 }
+.link-sintoma{
+  text-decoration: none;
+  color: black;
+}
+.link-sintoma:hover{
+  text-decoration: none;
+  color: #cc092f;
+}
+

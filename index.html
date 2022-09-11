@@ -2,18 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="shortcut icon" href="assets/img/icon.svg" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Sífilis</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <section id="navs">
+      <!-- NAV DESKTOP -->
       <nav
         class="p-1 shadow-lg fixed-top ms-lg-5 me-lg-5 nav d-flex flex-row justify-content-center"
       >
-        <a href="" class="nav-link">O que é?</a>
-        <a href="" class="nav-link">Transmissão</a>
+        <a href="#o-que-e" class="nav-link">O que é?</a>
+        <a href="#transmissao" class="nav-link">Transmissão</a>
 
         <div class="dropdown">
           <a
@@ -38,6 +40,8 @@
         <a href="" class="nav-link">Prevenção</a>
         <a href="" class="nav-link">Panoramas</a>
       </nav>
+
+      <!-- NAV MOBILE -->
       <nav class="nav-mobile fixed-top shadow-lg">
         <a
           data-bs-toggle="collapse"
@@ -60,22 +64,44 @@
             />
           </svg>
         </a>
+        <!-- COLLAPSE DA NAV MOBILE -->
         <div class="collapse menu-mobile fixed-top" id="collapseExample">
-          <div class="list-group mx-3">
-            <a href="#o-que-e" class="list-group-item list-group-item-action">
+          <div class="list-group flex-column m-1">
+            <a
+              href="#o-que-e"
+              class="list-group-item nav-item-mobile list-group-item-action"
+            >
               O que é?
             </a>
-            <a href="#" class="list-group-item list-group-item-action"
-              >A second link item</a
+            <a
+              href="#transmissao"
+              class="list-group-item nav-item-mobile list-group-item-action"
+              >Transmissão</a
             >
-            <a href="#" class="list-group-item list-group-item-action"
-              >A third link item</a
+            <a
+              href="#"
+              class="list-group-item nav-item-mobile list-group-item-action"
+              >Sintomas</a
             >
-            <a href="#" class="list-group-item list-group-item-action"
-              >A fourth link item</a
+            <a
+              href="#"
+              class="list-group-item nav-item-mobile list-group-item-action"
+              >Diagnóstico</a
             >
-            <a href="#" class="list-group-item list-group-item-action"
-              >A disabled link item</a
+            <a
+              href="#"
+              class="list-group-item nav-item-mobile shadow-lg list-group-item-action"
+              >Tratamento</a
+            >
+            <a
+              href="#"
+              class="list-group-item nav-item-mobile list-group-item-action"
+              >Prevenção</a
+            >
+            <a
+              href="#"
+              class="list-group-item nav-item-mobile shadow-lg list-group-item-action"
+              >Panoramas</a
             >
           </div>
         </div>
@@ -113,9 +139,16 @@
           </div>
         </div>
       </section>
-      
-      <div class="w-100 d-flex justify-content-center"><img width="100px" class="mx-auto" src="assets/img/divisor.svg" alt=""> </div>
-      
+
+      <div class="w-100 d-flex justify-content-center">
+        <img
+          width="100px"
+          class="mx-auto"
+          src="assets/img/divisor.svg"
+          alt=""
+        />
+      </div>
+
       <section id="transmissao">
         <div class="container my-5">
           <div class="row d-flex align-items-center justify-content-around">
@@ -159,6 +192,100 @@
                     src="assets/img/doacao-de-sangue.png"
                   />
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="w-100 d-flex justify-content-center">
+        <img
+          width="100px"
+          class="mx-auto"
+          src="assets/img/divisor.svg"
+          alt=""
+        />
+      </div>
+
+      <section id="sintomas">
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 col-md-12">
+              <p class="subtitulo">Sintomas</p>
+              <div class="texto flex-column">
+                <p>A Sífilis é separada em estágios, sendo eles:</p>
+                <ul>
+                  <li><a class="link-sintoma" href="#primaria">Primária</a></li>
+                  <li>
+                    <a class="link-sintoma" href="#secundaria">Secundária</a>
+                  </li>
+                  <li>
+                    <a class="link-sintoma" href="#terciaria">Terciária</a>
+                  </li>
+                  <li><a class="link-sintoma" href="#latente">Latente</a></li>
+                </ul>
+                <p>Cada estágio apresenta seus sinais e sintomas.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-12">
+              <img
+                class="img-fluid rounded-5"
+                src="assets/img/sintomas.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-12">
+              <div id="primaria" class="subtitulo">Primária</div>
+              <div class="texto">
+                <p>
+                  Aparecimento de uma ferida única no local onde a bactéria
+                  entrou durante um intervalo entre 10 e 90 dias após o
+                  contágio. A ferida pode aparecer no: pênis, vulva, vagina,
+                  colo uterino, ânus, boca e outros local situados na pele. Essa
+                  ferida não causa dores ao infectado, nem coça, arde ou gera
+                  pus. No máximo é acompanhada de caroços na virilha. A ferida
+                  desaparece sozinha, sendo tratada ou não.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 col-md-12 mt-3">
+              <div id="secundaria" class="subtitulo">Secundária</div>
+              <div class="texto">
+                <p>
+                  Aparecem entre 6 semanas a 6 meses da abertura e cicatrização
+                  da primeira ferida, são acompanhadas de manchas pelo corpo,
+                  sendo mais comuns nas palmas das mãos e plantas dos pés, cujas
+                  são ricas em bactérias. A segunda etapa já traz sintomas como
+                  febre, mal-estar, dor de cabeça e caroços pelo corpo. O
+                  surgimento de manchas cessa e desaparecem em algumas semanas,
+                  mesmo que não tenha o tratamento, fazendo acreditar que o
+                  infectado está curado.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-12 mt-3">
+              <div id="terciaria" class="subtitulo">Terciária</div>
+              <div class="texto">
+                <p>
+                  Podendo surgir desde o primeiro ano até 40 anos depois,
+                  apresentando na forma de lesões cutâneas, ósseas,
+                  cardiovasculares e neurológicas, capaz de causar a morte do
+                  infectado.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 col-md-12 mt-3">
+              <p id="latente" class="subtitulo">Latente <br>Assintomática</p>
+              <div class="texto">
+                <p>
+                  Não há sinais de sintomas, podendo ser dividida em duas. A
+                  latente recente é quando a infecção aparece em até um ano, a
+                  tardia é quando aparece após mais de um ano. Não se sabe o
+                  quanto essa fase pode durar, pois pode ser interrompida para o
+                  surgimento da forma secundária ou terciária.
+                </p>
               </div>
             </div>
           </div>
