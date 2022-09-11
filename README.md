@@ -4,6 +4,7 @@
 <ul>
   <li>HTML</li>
   <li>CSS</li>
+  <li>JS</li>
   <li>Bootstrap</li>
 </ul>
 <p>url: https://lean-dro.github.io/site-bio-sifilis/</p>
