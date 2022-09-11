@@ -20,7 +20,7 @@
         <div class="dropdown">
           <a
             class="nav-link dropdown-toggle"
-            href="#"
+            href="#sintomas"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
@@ -29,16 +29,49 @@
           </a>
 
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li>
+              <a
+                id="primariaTitulo"
+                onClick="colorirTitulo(this.id)"
+                class="dropdown-item"
+                href="#primaria"
+                >Primária</a
+              >
+            </li>
+            <li>
+              <a
+                id="secundariaTitulo"
+                onClick="colorirTitulo(this.id)"
+                class="dropdown-item"
+                href="#secundaria"
+                >Secundária</a
+              >
+            </li>
+            <li>
+              <a
+                id="terciariaTitulo"
+                onClick="colorirTitulo(this.id)"
+                class="dropdown-item"
+                href="#terciaria"
+                >Terciária</a
+              >
+            </li>
+            <li>
+              <a
+                id="latenteTitulo"
+                onClick="colorirTitulo(this.id)"
+                class="dropdown-item"
+                href="#latente"
+                >Latente</a
+              >
+            </li>
           </ul>
         </div>
 
-        <a href="" class="nav-link">Diagnóstico</a>
-        <a href="" class="nav-link">Tratamento</a>
-        <a href="" class="nav-link">Prevenção</a>
-        <a href="" class="nav-link">Panoramas</a>
+        <a href="#diagnostico" class="nav-link">Diagnóstico</a>
+        <a href="#tratamento" class="nav-link">Tratamento</a>
+        <a href="#prevencao" class="nav-link">Prevenção</a>
+        <a href="#panoramas" class="nav-link">Panoramas</a>
       </nav>
 
       <!-- NAV MOBILE -->
@@ -149,26 +182,26 @@
         />
       </div>
 
-      <section id="transmissao">
+      <section class="pt-2" id="transmissao">
         <div class="container my-5">
           <div class="row d-flex align-items-center justify-content-around">
             <div class="col-lg-6 col-md-12 col-sm-12">
               <div class="subtitulo">Transmissão</div>
               <div class="texto">
-                <p>
+                <p id="sexo">
                   A Sífilis é transmitida, como dito antes, através da prática
                   sexual, especificamente no contato de lesões de Sífilis de um
                   infectado por um outro indivíduo, tendo chances de até 60% de
                   contrair do parceiro sexual.
                 </p>
-                <p>
+                <p id="gravidez">
                   Após a transmissão sexual, a mais comum é a transmissão
                   vertical, ou, através do parto. Alguns recém-nascidos já se
                   infectam dentro do útero, enquanto outros podem vir a se
                   infectar durante o parto caso ocorra o contato com as lesões
                   de Sífilis nas genitálias da mãe.
                 </p>
-                <p>
+                <p id="doacao">
                   Outras formas de se contrair a Sífilis é por meio de: beijo e
                   transfusões sanguíneas. Nos dias atuais é considerado
                   negligência a ocorrência de transmissão via transfusões
@@ -179,15 +212,22 @@
             </div>
 
             <div class="col-lg-6 col-sm-12 col-md-12">
-              <div class="row">
-                <div class="col-4">
-                  <img class="img-fluid" src="assets/img/sexo.png" />
-                </div>
-                <div class="col-4">
-                  <img class="img-fluid" src="assets/img/gravidez.png" />
+              <div
+                class="row flex-row fundo-transmissao p-3 rounded-5 justify-content-end align-items-center"
+              >
+                <div class="col-6">
+                  <img id="sexo" class="img-fluid" src="assets/img/sexo.png" />
                 </div>
                 <div class="col-4">
                   <img
+                    id="gravidez"
+                    class="img-fluid"
+                    src="assets/img/gravidez.png"
+                  />
+                </div>
+                <div class="col-2">
+                  <img
+                    id="doacao"
                     class="img-fluid"
                     src="assets/img/doacao-de-sangue.png"
                   />
@@ -207,7 +247,7 @@
         />
       </div>
 
-      <section id="sintomas">
+      <section class="pt-2" id="sintomas">
         <div class="container my-5">
           <div class="row">
             <div class="col-lg-6 col-sm-12 col-md-12">
@@ -215,14 +255,42 @@
               <div class="texto flex-column">
                 <p>A Sífilis é separada em estágios, sendo eles:</p>
                 <ul>
-                  <li><a class="link-sintoma" href="#primaria">Primária</a></li>
                   <li>
-                    <a class="link-sintoma" href="#secundaria">Secundária</a>
+                    <a
+                      id="primariaTitulo"
+                      onClick="colorirTitulo(this.id)"
+                      class="link-sintoma"
+                      href="#primaria"
+                      >Primária</a
+                    >
                   </li>
                   <li>
-                    <a class="link-sintoma" href="#terciaria">Terciária</a>
+                    <a
+                      id="secundariaTitulo"
+                      onClick="colorirTitulo(this.id)"
+                      class="link-sintoma"
+                      href="#secundaria"
+                      >Secundária</a
+                    >
                   </li>
-                  <li><a class="link-sintoma" href="#latente">Latente</a></li>
+                  <li>
+                    <a
+                      id="terciariaTitulo"
+                      onClick="colorirTitulo(this.id)"
+                      class="link-sintoma"
+                      href="#terciaria"
+                      >Terciária</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="latenteTitulo"
+                      onClick="colorirTitulo(this.id)"
+                      class="link-sintoma"
+                      href="#latente"
+                      >Latente</a
+                    >
+                  </li>
                 </ul>
                 <p>Cada estágio apresenta seus sinais e sintomas.</p>
               </div>
@@ -234,8 +302,8 @@
                 alt=""
               />
             </div>
-            <div class="col-lg-6 col-sm-12 col-md-12">
-              <div id="primaria" class="subtitulo">Primária</div>
+            <div class="col-lg-6 col-sm-12 col-md-12 mt-3">
+              <div id="primaria" class="subtitulo pt-5">Primária</div>
               <div class="texto">
                 <p>
                   Aparecimento de uma ferida única no local onde a bactéria
@@ -250,7 +318,7 @@
             </div>
 
             <div class="col-lg-6 col-sm-12 col-md-12 mt-3">
-              <div id="secundaria" class="subtitulo">Secundária</div>
+              <div id="secundaria" class="subtitulo pt-5">Secundária</div>
               <div class="texto">
                 <p>
                   Aparecem entre 6 semanas a 6 meses da abertura e cicatrização
@@ -265,7 +333,7 @@
               </div>
             </div>
             <div class="col-lg-6 col-sm-12 col-md-12 mt-3">
-              <div id="terciaria" class="subtitulo">Terciária</div>
+              <div id="terciaria" class="subtitulo pt-5">Terciária</div>
               <div class="texto">
                 <p>
                   Podendo surgir desde o primeiro ano até 40 anos depois,
@@ -277,7 +345,7 @@
             </div>
 
             <div class="col-lg-6 col-sm-12 col-md-12 mt-3">
-              <p id="latente" class="subtitulo">Latente <br />Assintomática</p>
+              <div id="latente" class="subtitulo pt-5">Latente</div>
               <div class="texto">
                 <p>
                   Não há sinais de sintomas, podendo ser dividida em duas. A
@@ -291,6 +359,132 @@
           </div>
         </div>
       </section>
+
+      <div class="w-100 d-flex justify-content-center">
+        <img
+          width="100px"
+          class="mx-auto"
+          src="assets/img/divisor.svg"
+          alt=""
+        />
+      </div>
+
+      <section class="pt-2" id="diagnostico">
+        <div class="container my-5">
+          <div class="row d-flex align-items-center justify-content-around">
+            <div class="teste col-lg-6 col-md-12 col-sm-12">
+              <div class="subtitulo">Diagnóstico</div>
+              <div class="texto">
+                <p>
+                  O diagnóstico é realizado através de um teste rápido
+                  (disponibilizado pelo SUS), sendo prático e rápido de se sair
+                  o resultado, chegando ao máximo de 30 minutos. O teste também
+                  não necessita de uma estrutura laboratorial.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 col-md-12">
+              <img
+                class="img-fluid rounded-5"
+                src="assets/img/exame.jpg"
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="w-100 d-flex justify-content-center">
+        <img
+          width="100px"
+          class="mx-auto"
+          src="assets/img/divisor.svg"
+          alt=""
+        />
+      </div>
+
+      <section class="pt-2" id="tratamento">
+        <div class="container my-5">
+          <div
+            class="row flex-lg-row-reverse d-flex align-items-center justify-content-around"
+          >
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="subtitulo">Tratamento</div>
+              <div class="texto">
+                <p>
+                  O tratamento mais eficaz conhecido é a aplicação da penicilina
+                  benzatina – benzetacil – pode pode ser aplicada em UBS.
+                </p>
+                <p>
+                  No caso de grávidas, para se evitar a transmissão vertical, é
+                  recomendado o tratamento o quanto antes possível. A penicilina
+                  benzatina continua sendo a forma de tratamento, que é iniciado
+                  30 dias antes do parto.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 col-md-12">
+              <img
+                class="img-fluid rounded-5"
+                src="assets/img/tratamento.jpg"
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="w-100 d-flex justify-content-center">
+        <img
+          width="100px"
+          class="mx-auto"
+          src="assets/img/divisor.svg"
+          alt=""
+        />
+      </div>
+
+      <section class="pt-2" id="prevencao">
+        <div class="container my-5">
+          <div class="subtitulo text-center">Prevenção</div>
+          <div class="d-flex align-items-center justify-content-center">
+            <img
+              class="rounded-5"
+              height="600px"
+              src="assets/img/prevencao.gif"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="pt-2" id="panoramas">
+        <div class="container my-5">
+          <div
+            class="row flex-lg-row d-flex align-items-center justify-content-around"
+          >
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="subtitulo">Panorama</div>
+              <div class="texto">
+                <p>
+                  Entre 2010 e 2020, apenas no Brasil, os casos chegaram a
+                  aumentar de mais de 3.000 para mais de 115.000, aumento de 29
+                  vezes. Já ao redor do globo a OMS estima que o número de
+                  pessoas infectadas chega na casa dos 12 milhões.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 col-md-12">
+              <img
+                class="img-fluid rounded-5"
+                src="assets/img/mapa.jpg"
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <script
@@ -298,19 +492,16 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/code.js"></script>
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script>
-     
-      ScrollReveal().reveal('#o-que-e', { delay: 200 });
-      ScrollReveal().reveal('#transmissao', { delay: 200 });
-      ScrollReveal().reveal('#sintomas', { delay: 200 });
+      ScrollReveal().reveal("#o-que-e", { delay: 200 });
+      ScrollReveal().reveal("#transmissao", { delay: 200 });
+      ScrollReveal().reveal("#sintomas", { delay: 200 });
 
-      ScrollReveal().reveal('#primaria', { delay: 200 });
-      ScrollReveal().reveal('#secundaria', { delay: 200 });
-      ScrollReveal().reveal('#terciaria', { delay: 200 });
-      ScrollReveal().reveal('#latente', { delay: 200 });
-
-
+      ScrollReveal().reveal("#sexo", { delay: 1000 });
+      ScrollReveal().reveal("#gravidez", { delay: 10000 });
+      ScrollReveal().reveal("#doacao", { delay: 20000 });
     </script>
   </body>
 </html>

@@ -25,6 +25,7 @@
 #navs {
   background-color: #cc092f;
 }
+
 @media screen and (max-width: 576px) {
   .nav {
     display: none !important;
@@ -52,12 +53,14 @@
     font-size: 15px !important;
   }
 }
-
+#conteudo{
+  padding-top: 30px;
+}
 .img-fundo {
   background-image: url("../img/FUNDO-SITE.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 95vh;
+  height: 100vh;
 }
 .caixa-titulo {
   transition: all 2s;
@@ -96,6 +99,9 @@
   font-size: 18px;
   text-align: justify;
 }
+.fundo-transmissao{
+  background-color: #cc092f;
+}
 .link-sintoma{
   text-decoration: none;
   color: black;
@@ -103,5 +109,8 @@
 .link-sintoma:hover{
   text-decoration: none;
   color: #cc092f;
+}
+.titulo-colorido{
+  color: #cc092f!important;
 }
 
