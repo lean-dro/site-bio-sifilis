@@ -114,11 +114,11 @@
       </div>
     </div>
 
-    <section class="conteudo">
+    <section id="conteudo">
       <section id="o-que-e">
         <div class="container my-5">
           <div class="row d-flex align-items-center justify-content-around">
-            <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="teste col-lg-6 col-md-12 col-sm-12">
               <div class="subtitulo">O que é?</div>
               <div class="texto">
                 A Sífilis é uma doença infecciosa de disseminação global cuja
@@ -277,7 +277,7 @@
             </div>
 
             <div class="col-lg-6 col-sm-12 col-md-12 mt-3">
-              <p id="latente" class="subtitulo">Latente <br>Assintomática</p>
+              <p id="latente" class="subtitulo">Latente <br />Assintomática</p>
               <div class="texto">
                 <p>
                   Não há sinais de sintomas, podendo ser dividida em duas. A
@@ -298,5 +298,19 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+     
+      ScrollReveal().reveal('#o-que-e', { delay: 200 });
+      ScrollReveal().reveal('#transmissao', { delay: 200 });
+      ScrollReveal().reveal('#sintomas', { delay: 200 });
+
+      ScrollReveal().reveal('#primaria', { delay: 200 });
+      ScrollReveal().reveal('#secundaria', { delay: 200 });
+      ScrollReveal().reveal('#terciaria', { delay: 200 });
+      ScrollReveal().reveal('#latente', { delay: 200 });
+
+
+    </script>
   </body>
 </html>
