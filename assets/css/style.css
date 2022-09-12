@@ -60,10 +60,10 @@
   padding-top: 30px;
 }
 .img-fundo {
-  background-image: url("../img/FUNDO-SITE-FULL.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  background-image: url("../img/FUNDO-SITE-FULL.svg")!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+  height: 98vh!important;
 }
 .caixa-titulo {
   transition: all 2s;
