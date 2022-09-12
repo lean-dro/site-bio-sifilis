@@ -1,3 +1,4 @@
+/* FONTES */
 @font-face {
   font-family: "Roboto Mono";
   src: url("../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf");
@@ -14,6 +15,7 @@
   font-family: "Merienda Bold";
   src: url("../fonts/Merienda/Merienda-Bold.ttf");
 }
+
 .nav {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -25,7 +27,7 @@
 #navs {
   background-color: #cc092f;
 }
-
+/* RESPONSIVIDADE MOBILE */
 @media screen and (max-width: 576px) {
   .nav {
     display: none !important;
@@ -36,8 +38,8 @@
     background-color: rgb(220, 53, 69);
   }
   .menu-mobile {
-   width: 300px;
-   /* display: flex;
+    width: 300px;
+    /* display: flex;
    flex-direction: row-reverse; */
   }
   .nav-item-mobile {
@@ -53,11 +55,12 @@
     font-size: 15px !important;
   }
 }
-#conteudo{
+/* CONTEUDO */
+#conteudo {
   padding-top: 30px;
 }
 .img-fundo {
-  background-image: url("../img/FUNDO-SITE.svg");
+  background-image: url("../img/FUNDO-SITE-FULL.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -99,18 +102,36 @@
   font-size: 18px;
   text-align: justify;
 }
-.fundo-transmissao{
+.fundo-transmissao {
   background-color: #cc092f;
 }
-.link-sintoma{
+.link-sintoma {
   text-decoration: none;
   color: black;
 }
-.link-sintoma:hover{
+.link-sintoma:hover {
   text-decoration: none;
   color: #cc092f;
 }
-.titulo-colorido{
-  color: #cc092f!important;
+.titulo-colorido {
+  color: #cc092f !important;
 }
-
+/* Footer */
+.footer {
+  background-color: #cc092f;
+  height: 20vh;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Roboto Mono";
+}
+.links-footer {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+.links-footer:hover {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
