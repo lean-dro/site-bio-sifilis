@@ -1,6 +1,6 @@
 # Info/Sífilis
 <p>Site desenvolvido para apresentar e explicar mais sobre a Sífilis. Esse site é um projeto interdisciplinar entre as matérias de PW, PAM e BIO.</p>
-<p>Tecnlogias utilizadas:</p>
+<p>Tecnologias utilizadas:</p>
 <ul>
   <li>HTML</li>
   <li>CSS</li>
