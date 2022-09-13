@@ -166,12 +166,15 @@
               </div>
             </div>
 
-            <div class="col-lg-6 col-sm-12 col-md-12">
+            <div class="col-lg-6 col-sm-12 col-md-12 d-flex flex-column">
               <img
                 class="img-fluid rounded-5"
                 src="assets/img/agente.jpg"
                 srcset=""
               />
+              <p class="text-center agente">
+                Agente Etiológico - Treponema pallidum
+              </p>
             </div>
           </div>
         </div>
@@ -181,7 +184,7 @@
         <img
           width="100px"
           class="mx-auto"
-          src="assets/img/divisor.svg"
+          src="assets/img/divisor.png"
           alt=""
         />
       </div>
@@ -246,7 +249,7 @@
         <img
           width="100px"
           class="mx-auto"
-          src="assets/img/divisor.svg"
+          src="assets/img/divisor.png"
           alt=""
         />
       </div>
@@ -368,7 +371,7 @@
         <img
           width="100px"
           class="mx-auto"
-          src="assets/img/divisor.svg"
+          src="assets/img/divisor.png"
           alt=""
         />
       </div>
@@ -402,7 +405,7 @@
         <img
           width="100px"
           class="mx-auto"
-          src="assets/img/divisor.svg"
+          src="assets/img/divisor.png"
           alt=""
         />
       </div>
@@ -443,7 +446,7 @@
         <img
           width="100px"
           class="mx-auto"
-          src="assets/img/divisor.svg"
+          src="assets/img/divisor.png"
           alt=""
         />
       </div>
@@ -461,6 +464,15 @@
           </div>
         </div>
       </section>
+
+      <div class="w-100 d-flex justify-content-center">
+        <img
+          width="100px"
+          class="mx-auto"
+          src="assets/img/divisor.png"
+          alt=""
+        />
+      </div>
 
       <section class="pt-2" id="panoramas">
         <div class="container my-5">
@@ -490,14 +502,64 @@
         </div>
       </section>
     </section>
+
+    <div class="w-100 d-flex justify-content-center">
+      <img width="100px" class="mx-auto" src="assets/img/divisor.png" alt="" />
+    </div>
+
+    <section class="pt-2" id="referencias">
+      <div class="container my-5">
+        <div class="subtitulo">Referências</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            BASSETTE, Fernanda.
+            <b>Como a sífilis voltou a crescer no Brasil e no mundo?</b> Mesmo
+            com tratamento barato, a infecção sexualmente transmissível teve um
+            aumento de casos nos últimos anos. [S. l.], 2 mar. 2022. Disponível
+            em:
+            <a
+              class="links-referencias"
+              href="https://saude.abril.com.br/medicina/como-a-sifilis-voltou-a-crescer-no-brasil-e-no-mundo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://saude.abril.com.br/medicina/como-a-sifilis-voltou-a-crescer-no-brasil-e-no-mundo/</a
+            >. Acesso em: 25 ago. 2022.
+          </li>
+          <li class="list-group-item">
+            SÍFILIS, gov.br. 2022. Disponível em:
+            <a
+              class="links-referencias"
+              href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sifilis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/sifilis</a
+            >. Acesso em: 24 ago. 2022.
+          </li>
+          <li class="list-group-item">
+            SALES, Inês Ferrer. <b>Sífilis</b>. 2011. Tese de Doutorado. 00500::
+            Universidade de Coimbra. Disponível em:
+            <a
+              class="links-referencias"
+              href="https://eg.uc.pt/handle/10316/48553"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://eg.uc.pt/handle/10316/48553</a
+            >. Acesso em: 23 ago. 2022.
+          </li>
+        </ul>
+      </div>
+    </section>
     <section id="footer">
       <div class="footer">
         <div class="container h-100 d-flex flex-row align-items-center">
           <div class="row justify-content-center align-items-center w-100">
-            <div class="col-4 text-center">
+            <div class="col-lg-4 col-sm-12 text-center">
               <p>Copyright © 2022 - Leandro Coelho</p>
             </div>
-            <div class="col-4 d-flex justify-content-center">
+            <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
               <a href="#"
                 ><img
                   style="filter: invert(100%); width: 70px"
@@ -506,12 +568,12 @@
                   alt=""
               /></a>
             </div>
-            <div class="col-4 text-center">
+            <div class="col-lg-4 col-sm-12 text-center">
               <div class="flex-column">
-                <div class="flex-row flex-sm-column d-flex gap-5 justify-content-center my-2">
+                <div class="flex-row d-flex gap-5 justify-content-center my-2">
                   <a
                     target="_blank"
-                    class="btn btn-outline-light "
+                    class="btn btn-outline-light"
                     style="font-size: 25px"
                     href="https://www.linkedin.com/in/leandro-coelho-2942a9220"
                     ><i class="bi bi-linkedin"></i
@@ -552,7 +614,8 @@
       ScrollReveal().reveal("#tratamento", { delay: 555 });
       ScrollReveal().reveal("#prevencao", { delay: 555 });
       ScrollReveal().reveal("#panorama", { delay: 555 });
-
+      ScrollReveal().reveal("#referencias", { delay: 555 });
+      
       ScrollReveal().reveal("#sexo", { delay: 555 });
       ScrollReveal().reveal("#gravidez", { delay: 555 });
       ScrollReveal().reveal("#doacao", { delay: 555 });

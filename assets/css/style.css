@@ -60,10 +60,10 @@
   padding-top: 30px;
 }
 .img-fundo {
-  background-image: url("../img/FUNDO-SITE-FULL.jpg")!important;
-  background-repeat: no-repeat!important;
-  background-size: cover!important;
-  height: 98vh!important;
+  background-image: url("../img/FUNDO-SITE-FULL.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 98vh !important;
 }
 .caixa-titulo {
   transition: all 2s;
@@ -97,6 +97,9 @@
   font-family: "Merienda Bold";
   font-size: 37.5px;
 }
+.agente {
+  font-family: "Merienda";
+}
 .texto {
   font-family: "Roboto Mono";
   font-size: 18px;
@@ -116,10 +119,19 @@
 .titulo-colorido {
   color: #cc092f !important;
 }
+.links-referencias {
+  color: black;
+  text-decoration: none;
+}
+.links-referencias:hover{
+  color: #cc092f;
+  text-decoration: none;
+}
+
 /* Footer */
 .footer {
+  padding: 20px;
   background-color: #cc092f;
-  height: 20vh;
   color: white;
   font-size: 16px;
   text-decoration: none;
